@@ -1,0 +1,29 @@
+button, input[type="submit"], a.logoff {
+	text-decoration: none;
+	height: auto;
+	width: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	margin-bottom: 10px;
+	margin-right: 10px;
+	
+	color: white;
+	border: none;
+	background-color: #756F6F;
+	box-shadow: 0px 2px 2px #888888;
+
+	cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, a.logoff:hover {
+	color: black;
+	background-color: white;
+}
+
+button:active, input[type="submit"]:active, a.logoff:active {
+	color: white;
+	background-color: #756F6F;
+	position: relative;
+	top: 2px;
+}

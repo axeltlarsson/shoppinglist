@@ -1,0 +1,184 @@
+/* Allmänt */
+header, nav, article, footer, address {  
+    display: block;  
+}
+/* Importera ett snyggt font */
+@font-face {
+  	font-family: "Jr Hand";
+	src: url(/assets/fonts/Jr-Hand.ttf);
+}
+* {
+	font-family: 'Jr Hand', sans-serif;
+}
+/* Hyperlänkar */
+a { 
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color:#802727; 
+}
+
+/* Input-fält */
+input,textarea {
+	font-size: 40px;
+	background: transparent;
+	padding:0px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-web-kit-border-radius:4px;
+	-khtml-border-radius:4px; 
+}
+
+/* Fixa bakgrunden - papersbiten */
+#note {
+	width: 628px;	/* Bredden på top.png, middle.png och bottom.png*/
+	min-height: 562px;	/* Höjden på top.png + middle.png + bottom.png*/
+	margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    background: url(/assets/images/top.png) top no-repeat, url(/assets/images/bottom.png)  bottom no-repeat;
+}
+/* Dynamiskt expanderbar papersbit - middle.png repeteras */
+#note:before {
+
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 372px;	/* Höjden på top.png */
+    right: 0;
+    bottom: 130px;	/* Höjden på bottom.png */
+	min-height: 60px;	/* Försök till att definiera mini-tillägg av höjd som motsvarar middle.png */
+    left: 0;
+    background: url(/assets/images/middle.png) top repeat-y;
+}
+
+ /* Fixa containern för innehållet på pappersbiten */
+#content { 
+	border: 1px solid transparent;
+	padding-top: 56px;
+	padding-bottom: 47px;
+	margin-left: 100px;
+	margin-right: 8px;
+	min-height: 435px;
+}
+
+ /* Headern */
+h1 {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-size: 50px;
+	color: #0404B4;
+    font-weight: bold;
+}
+
+/* Mobilversionens poster */
+.item {
+	font-size: 40px;
+	padding: 0px;
+	line-height: 60px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+/* Knapparna för att ändra läge på mobilsidan */
+#editModeButton, #shoppingModeButton {
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 174px;
+}
+
+#editModeButton:hover, #shoppingModeButton:hover {
+	color:#802727; 
+}
+/* Desktopversionens container av posterna - en form */
+#shoppinglist {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Desktopversionens poster */
+.itemBox {
+	height: 60px;
+	border: transparent;
+	width: 480px;
+	margin-right: 5px;
+	outline: none;
+}
+
+/* Inputfältet som lägger till poster i listan */
+#addItemBox {
+	width: 450px;
+	border-top: 0px;
+	height: 60px;
+	outline: none;
+	border: transparent;
+}
+#addItemBox:focus {
+	border: transparent;
+}
+
+/* Här visas php-meddelanden */
+#resultDiv {
+	position: fixed;
+}
+
+/* Knappen för att rensa listan */
+#reset {
+	width: auto;
+	position: absolute;
+	padding-bottom: 0px;
+	margin-top: 35px;
+	margin-left: 480px;
+}
+
+#resetButton {
+	font-size: 40px;
+}
+
+/* Logga ut-knappen */
+.logoff {
+	position: absolute;
+	margin-left: 7px;
+	margin-top: 115px;
+	font-size: 20px;
+	
+}
+
+/* Knapparna för att ta bort poster från listan, samt återställ-knappen */
+.itemRemoveButton {
+	background: none;
+	border: none;
+	font-size: 30px;
+}
+.itemRemoveButton:hover, #resetButton:hover {
+	color: red;
+    display: inline;
+    cursor: pointer;
+    text-shadow: 1px 1px #666;
+}
+.button {
+	background: none;
+	border: none;
+	font-size: 20px;
+}
+.button:hover {
+	cursor: pointer;
+}
+
+/* Element som inte har blivit konfirmerade server side får denna klass */
+.localOnly {
+    background-color: hotpink;
+    opacity: 0.3;
+}
+
+/* Markerade element får denna klass */
+.marked {
+	text-decoration: line-through;
+	opacity: 0.3;
+}

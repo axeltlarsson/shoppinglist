@@ -1,0 +1,131 @@
+/* Huvudrubrik */
+h1 {
+	font-size: 40px;
+}
+
+/* Varje post i inköpslistan */
+.item {
+	min-height: 50px;
+	
+	padding: 5px;
+	
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+
+	background-color: white;
+	box-shadow: 0px 2px 2px #888888;
+
+	font-size: 35px;
+}
+
+/* Ta-bort knapp till posterna */
+.itemRemoveButton {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+
+	height: 62px;
+	width: 10%;
+	
+	color: white;
+	border: none;
+	background-color: #756F6F;
+	box-shadow: 0px 2px 2px #888888;
+
+	font-size: 35px;
+}
+
+/* Ta bort styling av input */
+input[type=text] {
+	outline: none;
+	border: 1px solid transparent;
+	-webkit-appearance: none;
+	width: 81%;
+	font-size: 30px;
+}
+
+/* Textfält för att ändra posterna */
+.itemBox, #addItemBox {
+	width: 82%;
+	height: 50px;
+	
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	
+	padding: 5px;
+	
+	background-color: white;
+	box-shadow: 0px 2px 2px #888888;
+
+	font-size: 30px;
+}
+
+/* Trick för att få rätt bredd på input-boxen */
+#inputForm {
+	display: none;
+}
+#addItemBox {
+	width: 81%;
+}
+
+
+/* Fixa marginal ner mot sidan för knapparna */
+#tools {
+	margin-bottom: 75px;
+}
+
+/* "Ändra"-knappen */
+#editModeButton, #shoppingModeButton {
+	float: right;̈́
+
+	height: 50px;
+	width: auto;
+
+
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	color: white;
+	border: none;
+	background-color: #756F6F; 
+	box-shadow: 0px 2px 2px #888888;
+
+	font-size: 30px;
+	text-align: left;
+}
+
+/* "Logga ut"-knappen */
+a.logoff {
+	float: left;
+	
+	height: 40px;
+	width: auto;
+	
+	margin-bottom: 100px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	text-decoration: none;
+	color: white;
+	box-shadow: 0px 2px 2px #888888;
+	background-color: #756F6F;
+
+	font-size: 30px;
+	text-align: left;
+}
+
+.logoff {
+	padding: 5px;
+}

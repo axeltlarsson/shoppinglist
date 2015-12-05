@@ -1,0 +1,132 @@
+/* Allmänt */
+/* Make HTML 5 elements display block-level for consistent styling */  
+header, nav, article, footer, address {  
+    display: block;  
+}
+
+/* Importera ett snyggt font */
+@font-face {
+   /* font-family: "BONVENOCF";
+    src: url(/fonts/BonvenoCF-Light.otf);*/
+	font-family: "Jr Hand";
+	src: url(/assets/fonts/Jr-Hand.ttf);
+}
+
+* {
+	/*font-family: 'BONVENOCF', sans-serif;*/
+	font-family: 'Jr Hand', sans-serif;
+}
+
+a { 
+	text-decoration: none; 
+}
+
+a:hover {
+	color:#802727; 
+}
+
+/* Fixa till input forms och textarea*/
+input {
+	padding:5px;
+	border:1px solid #999;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-web-kit-border-radius:4px;
+	-khtml-border-radius:4px;
+}
+
+textarea { 
+	padding:5px;
+	border:1px solid #999;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-web-kit-border-radius:4px;
+	-khtml-border-radius:4px; 
+}
+
+/* Fixa till knappar */
+.button {
+    padding: 5px 10px;
+    display: inline;
+    background: #333 url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    //text-shadow: 1px 1px #666;
+}
+
+.button:hover {
+    background-color: #ddd;
+    color: #000;
+    border: 1px solid #999;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+}
+
+input:hover,textarea:hover {
+	border: 1px solid #224f99;
+}
+
+/* Placera inloggningsformen */
+#inloggningsform {
+	width: 350px;
+	min-height: 180px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+	border: 1px solid #224f99;
+	border-radius:15px;
+	-moz-border-radius:4px;
+	-web-kit-border-radius:4px;
+	-khtml-border-radius:4px;
+	padding: 10px;
+	background: url('/assets/images/ShortNoteWhole.png') center;
+}
+.field {
+	background: none;
+}
+
+/* Fixa till knappar */
+.loginButton {
+	margin-top: 10px;
+    padding: 5px 10px;
+    display: inline;
+    background: #333 url(button.png) repeat-x bottom;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    /* text-shadow: 1px 1px #666; */
+}
+
+.loginButton:hover {
+    background: none;
+    color: #000;
+    border: 1px solid #999;
+}
+
+.loginButton:active {
+    position: relative;
+    top: 1px;
+    padding: 6px 10px 4px;
+}
+
+.error {
+    float: left;
+}
+
+label[for=rememberMe] {
+    display: inline-block;
+    margin-top: 10px;
+}

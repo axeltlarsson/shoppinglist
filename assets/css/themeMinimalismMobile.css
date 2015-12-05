@@ -1,0 +1,21 @@
+/* Använd Roboto Light 100 */
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Huvudrubrik */
+h1 {
+	text-align: center;
+}
+
+/* Själva sidan */
+html {
+/*	background-color: #DADDDE;*/
+	background-color: #F7F7F7;
+}
+
+/* Markerade element får denna klass */
+.marked {
+	text-decoration: line-through;
+	opacity: 0.3;
+}

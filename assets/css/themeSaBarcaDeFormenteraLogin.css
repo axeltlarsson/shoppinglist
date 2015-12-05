@@ -1,0 +1,56 @@
+/* Färgpalett "Sa Barca de Formentera"
+#333333
+#424242
+#00CCD6
+#EFEFEF
+#FFD900
+*/
+
+/* Importera grundstil */
+@import "/assets/css/themeMinimalismLogin.css";
+
+html {
+    background-color: #333333;
+}
+
+h1 {
+    color: #00CCD6;
+}
+
+input[type=password] { 
+    background-color: #424242;
+    color: #EFEFEF;
+    box-shadow: none;
+}
+
+input[type=password]:focus {
+    color: #FFD900;
+}
+
+input[type=submit] {
+    background-color: #424242;
+    color: #EFEFEF;
+    box-shadow: none;
+    padding-bottom: 0.625em;
+}
+
+input[type=submit]:hover {
+    background-color: #FFD900;
+    color: #333333;
+}
+
+.err {
+    color: #FFD900;
+}
+
+select {
+    color: #EFEFEF;
+}
+
+#themeChooser {
+    background-color: #424242;
+    box-shadow: none;
+}
+
+select:focus {
+}

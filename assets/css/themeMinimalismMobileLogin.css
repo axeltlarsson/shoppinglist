@@ -1,0 +1,111 @@
+/* Använd Roboto Light 100 */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+}
+
+/* Huvudrubriken */
+h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+html {
+	background-color: #F7F7F7;
+}
+
+/* Dölj "Lösenord" */
+label[for=password] {
+	display: none;
+}
+/* Inloggningsform */
+#inloggningsform {
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Input-rutan för lösenord */
+input[type=password] {
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	
+	width: 90%;
+	height: 50px;
+
+	padding: 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+
+	background-color: white;
+	box-shadow: 0px 4px 4px #888888;
+
+	
+}
+
+/* Login-knappen */
+input[type=submit] {
+	float: left;
+
+	height: 50px;
+	width: auto;
+
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	color: white;
+	border: none;
+	background-color: #756F6F;
+	box-shadow: 0px 2px 2px #888888;
+
+	
+}
+
+/* "Håll mig inloggad" - svårt att styla så jag döljer den bara */
+input[type="checkbox"], label[for=rememberMe] {
+	display: none;
+}
+
+/* Felmeddelande */
+.err {
+	font-size: 28px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* Tema-väljaren */
+#themeChooser select {
+	width: 100%;
+	height: 50px;
+
+	background: transparent;
+	 -webkit-appearance: none;
+	
+	padding: 5px;
+	padding-right: 0px;
+
+	font-size: 30px;
+
+	border: none;
+} 
+
+#themeChooser{
+	width: 62%;
+	
+	float: right;
+	margin-right: 4.4%;
+
+	background: url(/assets/images/down-arrow.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 95% 50%;	
+	background-color: white;
+	box-shadow: 0px 2px 2px #888888;
+
+	border: none;
+}

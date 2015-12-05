@@ -1,0 +1,106 @@
+Beskriver projektet "inköpslistan".
+* 2015-06-21 15:13
+	- Använder nu ws://listan.axellarsson.nu istället för ws://axellarsson.nu vilket bör ge mer konsekvent beteende.
+	
+* 2014-12-27 16:13
+    - Att ta bort den sista posten implicerar nu ett anrop av "shoppinglistSocket.clear()" -> detta borde reducera problemet
+    med itemIdXX > itemId99 drastiskt.
+    
+* 2014-12-11 21:20
+    - använder nu inte http://list.axellarsson.nu utan /mobile_index.php så att det spelar inte någon roll var listan
+    ligger den kommer ändå att fungera för mobiler. Givetvis måste dock ws://axellarsson.nu:9001 fortfarande var hådkodat.
+
+* 2014-11-27 18:26
+    - använder nu http://listan.axellarsson.nu och ws://axellarsson.nu:9001
+
+* 2014-08-09 18:28
+    - refaktoriserat namnen på teman, ie "Nytt tema" -> Minimalism
+    - lagt till ett nytt tema "Sa Barce de Formentera" (baseras på Minimalism)
+
+* 2014-05-31 16:25
+    - fixat bugg att updateItem inte fungerade korrekt med isMarked
+    - refaktoriserat namn, från gui/oldGui till shoppinglist respektive legacyShoppinglist, även bytt motsvarande filnamn
+    
+* 2014-05-29 16:11
+    - fixade bugg att Safari inte visade Roboto
+    - fixade bugg att Firefox på min MacBook visade Roboto Thin Italic istället för
+        bara Roboto Thin (den valde automatiskt den installerade Roboto Thin Italic, men  nu har jag också installerat Roboto Thin)
+        
+* 2014-05-29 15:41
+    - fixat att man inte kunde få updateItem att fungera korrekt när man ändrade på mobil, då upptäcktes inte uppdatering av andra mobilklienter
+    - fixat 300 ms delay gone away så nu är mobilsidan snabbare än någonsin
+    
+* 2014-05-29 15:03
+    - fixat inloggningen igen iom uppgraderingen av PHP
+    - alla mysql-queries är nu uppdaterade till PDO
+    - ändrat på localOnly till att endast vara en CSS-klass -> blir mycket lättare
+    
+* 2014-05-09 18:47
+    - syncToDatabase() fungerar nu både upp och ner så att säga...
+    
+* 2014-04-22 16:38
+    - Implementerat removeItem för WebSockets, nu fungerar det mesta bra för Desktop med WebSocket-stöd.
+    
+* 2014-04-20 XX:XX
+    - Fixat animationer igen vid användning av WebSockets.
+    
+* 2014-04-19 21:48
+    - Fixade äcklig bugg i utils.getNextItemId när listan var tom, då blev det ett tyst fel när den inte kunde substringa "undefined".
+
+* 2014-04-19 18:36
+    - WebSocket-implementering är klar för Desktop gällande: rensa, lägga till ny, uppdatera.
+
+* 2014-03-24 20:00
+	- Påbörjat implementeringen av WebSocket-stöd.
+	- Namespace:at javascript.js till oldGUI - skall refaktorisera mer här.
+    
+* 2013-09-29 20:54
+	- Fixat animering när man tar bort och lägger till poster samt när man rensar databasen.
+	- Undersökt och researchat Web Sockets vs polling etc.
+
+* 2013-09-28 18:21 
+	- Fixat overflow av poster i inköpslistan på Android Stock Browser.
+
+* 2013-09-28 17:57
+	- Fixat styling av temaväljaren på mobilenheter.
+	
+* 2013-09-26 23:56
+	- Använder nu jQuery för att flytta "Logga ut"-knappen på mobiler, så som jag gjort med Desktop, detta för att det klassiska temat fortfarande skall fungera.
+	
+* 2013-09-22 18:50
+	- Fixat nytt tema för både login.php och index.php
+	
+* 2013-09-22 16:09
+	- Fixat css-switcher som fungerar konsistent både för mobiler och desktop.
+	- Man kan använda ovan nämnda css-switcher för att välja mellan två teman -
+		det gamla vanliga klassiska och ett nytt, kallat "Nytt tema"
+
+* 2013-09-13 19:05
+	- Projektet använder nu GitHub
+	
+* 2013-09-08 21:39
+	- Fixat den nya designen även för "edit-mode" för Chrome på mobiler.
+
+* 2013-09-07 20:38
+	- Implementerat den nya designen av mobilsidan även för "edit-mode". Tog bort alternativet att rensa
+		databasen i denna vy - det fick inte plats på ett snyggt sätt och behövs inte för mobilsidan. Än
+		så länge fungerar detta endast bara för "Stock Android Browser" ej Chrome för mobiler.
+
+* 2013-09-07 17:05
+	- Komplett refaktorisering av hela projektet, allt ligger inte längre huller om buller i rot-mappen - 
+		nu är det snyggt organiserat under assets/css, assets/images osv.
+
+* 2013-09-05 20:38
+	- Påbörjade en ny design av mobil-sidan, en icke-skeumorfisk sådan. Lite Android-inspirerad med Roboto-font
+		etc.
+
+* 2012-08-04 18:42
+	- Fixade en bugg som förhindrade att man i vissa, relativt vanliga situationer, inte kunde
+		lägga till fler "items". Detta berodde på att listan sorterades på itemId utan tanke på
+		inledande nollor. Således sorterades det 1, 11, 12, ..., 2, 21..,8,9 etc. Detta gjorde att
+		När man lade till nya items så trodde sidan att det senaste itemId som gällde var item9. Men
+		item10 fanns då redan - vilket förhindrade att det kunde läggas till.
+	
+	- Fixade sorteringsbugg - i och med ovanstående bugg. Som sagt så sorterades tolv varor så här:
+		1,11,12,2,3,4,5,6,7,8,9. Nu sorteras de 01,02,03,04,05,06,07,08,09,10,11 vilket löser både
+		det estetiska med att sorteringen är konstig och ovanstående bugg.

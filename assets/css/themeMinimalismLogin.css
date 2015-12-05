@@ -1,0 +1,109 @@
+/* Importera generella knappar */
+@import "/assets/css/buttons.css";
+
+/* Använd Roboto Light 100 */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* Huvudrubrik */
+h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+/* Själva sidan */
+html {
+	background-color: #F7F7F7;
+}
+
+/* Huvudinnehållet */
+#inloggningsform {
+	width: 630px;
+	margin: 0 auto;
+}
+
+/* Dölj "Lösenord" */
+label[for=password] {
+	display: none;
+}
+
+/* Ta bort styling av input */
+input {
+	outline: none;
+	border: 1px ;
+	-webkit-appearance: none;
+}
+
+/* Input-rutan för lösenord */
+input[type=password] {
+	width: 600px;
+	height: 50px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	
+	padding: 5px;
+	padding-left: 10px;
+
+	background-color: white;
+	box-shadow: 0px 4px 4px #888888;
+}
+
+/* "Håll mig inloggad" - svårt att styla så jag döljer den bara */
+input[type="checkbox"], label[for=rememberMe] {
+	display: none;
+}
+
+/* Felmeddelande */
+.err {
+	font-size: 28px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* "Logga in"-knappen */
+input[type=submit] {
+	float: left;
+
+	height: 50px;
+	width: auto;
+
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* Tema-väljaren */
+#themeChooser select {
+	width: 245px;
+	height: 50px;
+
+	background: transparent;
+	 -webkit-appearance: none;
+	
+	padding: 5px;
+
+	border: 0px solid #ccc;
+	font-size: 30px;
+}
+
+#themeChooser {
+    width: 215px;
+	float: right;
+	overflow: hidden;
+	margin-right: 5px;
+	
+	
+	background: url(/assets/images/down-arrow.png);
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	
+	background-color: white;
+	box-shadow: 0px 2px 2px #888888;
+}
+

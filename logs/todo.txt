@@ -1,0 +1,13 @@
+[hög prio:]
+
+[medelhög prio]:
+* Fixa kakan så att inloggning blir mer persistent.
+* Byta från code.jquery.com till lokalt, även för receptdatabasen.
+* fixa möjlighet till overflow även på desktop
+* fixa ett snyggt sätt att ändra "marked" även på desktop.
+* BUGG: loop av alerts när man switchar wifi på Macbook om "Could not connect to ws".
+
+[låg prio]:  
+* Gör om stylechoosern helt med JS så att den går att style:a ordentligt med CSS. 
+* Fixa jQuery för mobiler så att animationer funkar där.
+* Responsive design!!!
