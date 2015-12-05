@@ -1,2 +1,5 @@
 logs/logFile
 assets/php/logFile
+assets/php/changePassword.php
+assets/php/checklogin.php
+assets/php/connect.php
