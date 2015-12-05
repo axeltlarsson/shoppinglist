@@ -1,0 +1,8 @@
+* 2014-06-01 13:09
+    - Skrivit ett init.d V script så nu bootas servern automatiskt varje start.
+* 2014-04-22 16:40
+    - Fixat bättre loggning med färger till terminaler - det är riktigt snyggt.
+* 2014-04-22 14:40
+    - Fixade lite bättre robusthet mot felaktiva Commands. Hela servern bör inte krascha på grund av felaktiga meddelande numera.
+* 2014-04-22 14:06
+    - Fixade bättre skydd mot SQL injection attacks (binder variabler i execute istället för att konkatenera direkt).

@@ -1,0 +1,7 @@
+------- ToDo -------
+- analysera returvärden från GetAllItemsCommand?
+- byta namn till något snyggar på GetAllItemsCommand?
+- automatisk reconnect av databasen. (timeout efter 8 h medför "SQLSTATE[HY000]: General error: 2006 MySQL server has gone away")
+    --- KLART
+- fixa ett upstart job-script för shoppinglistSocketServer
+    --- KLARS
