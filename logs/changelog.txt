@@ -1,4 +1,9 @@
 Beskriver projektet "inköpslistan".
+
+* 2016-03-06 18:31
+    - Lite buggutskrifter som hjälpte mig att få listan att funka på nginx, låter
+        de vara kvar.
+
 * 2015-06-21 15:13
 	- Använder nu ws://listan.axellarsson.nu istället för ws://axellarsson.nu vilket bör ge mer konsekvent beteende.
 	

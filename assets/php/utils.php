@@ -115,8 +115,16 @@
                 break;
         }
         
-        echo  $colors->getColoredString($message, $fg, $bg) . "\n";
+        echo  $colors->getColoredString($message, $fg, $bg) . "\n<br>";
+        echo GetCallingMethodName();
         date_default_timezone_set('Europe/Stockholm');
 		file_put_contents("/var/www/shoppinglist/logs/logFile", date("{Y-m-d H:i:s}") . " " . $message . "\n", FILE_APPEND);
+    }
+    function GetCallingMethodName(){
+        $e = new Exception();
+        $trace = $e->getTrace();
+        //position 0 would be the line that called this function so we ignore it
+        $last_call = $trace[1];
+        print_r($last_call);
     }
 ?>
