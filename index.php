@@ -7,7 +7,7 @@
 	
 	if(!$_SESSION['id']):
 	// Om man ej är inloggad
-	header("Location: /login.php");
+	header("Location: /login");
 
 ?>
 <?php
@@ -25,7 +25,7 @@
 		<!-- Kolla user agent -->
 		<?php
 			require_once('assets/php/mobile_device_detect.php');
-			mobile_device_detect(true,true,true,true,true,true,true,'/mobile_index.php',false);
+			mobile_device_detect(true,true,true,true,true,true,true,'/mobile_index',false);
 		?>
 		<!-- CSS för Desktop -->
 		<link rel="stylesheet" type="text/css" href="/assets/css/themeMinimalism.css" title="new" />

@@ -7,7 +7,7 @@
 	
 	if(!$_SESSION['id']):
 	// Om man ej är inloggad
-	header("Location: /login.php");
+	header("Location: /login");
 ?>
 <?php
 	else:

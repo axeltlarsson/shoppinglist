@@ -99,7 +99,7 @@
 <?php
 	else:
 	// Om man är inloggad
-	header("Location: index.php");
+	header("Location: /");
 	endif;
 	// Stänger if-else-konstruktionen
 ?>
