@@ -19,7 +19,7 @@
 		<title>Inköpslistan</title>
 		
 		<!-- CSS -->
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
 		<link id="desktopCSSNew" rel="stylesheet" type="text/css" href="/assets/css/themeMinimalismLogin.css" title="new" />
         <link id="formentera" rel="stylesheet" type="text/css" href="/assets/css/themeSaBarcaDeFormenteraLogin.css" title="formentera" />
 		<link rel="stylesheet" type="text/css" href="/assets/css/themeClassicLogin.css" title="classic" />

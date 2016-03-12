@@ -32,10 +32,10 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/themeClassic.css" title="classic" />
         <link rel="stylesheet" type="text/css" href="/assets/css/themeSaBarcaDeFormentera.css" title="formentera" />
 		<!-- Importera Roboto -->
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100">
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">
 		
 		<!-- jQuery -->
-		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="/assets/js/jquery.moveButtons.js" ></script>		
 		
 		<!-- Javascript -->
