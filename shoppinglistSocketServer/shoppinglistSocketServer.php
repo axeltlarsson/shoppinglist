@@ -78,7 +78,7 @@ class ShoppingListSocketServer extends WebSocketServer {
 }
 
 $db = new Database();
-$shoppingListSocketServer = new ShoppingListSocketServer("0.0.0.0","9001", $db, new CommandFactory($db), $argv[1]);
+$shoppingListSocketServer = new ShoppingListSocketServer("127.0.0.1","9001", $db, new CommandFactory($db), $argv[1]);
 try {
     $shoppingListSocketServer->run();
 }

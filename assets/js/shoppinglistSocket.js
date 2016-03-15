@@ -10,7 +10,7 @@ var shoppinglistSocket = (function () {
         // Connect to the shoppinglist web socket server, store the connection in "connection"
         if (typeof WebSocket !== 'undefined') {
             try {
-                connection = new WebSocket("ws://listan.axellarsson.nu:9001");
+                connection = new WebSocket("wss://listan.axellarsson.nu/websocket");
             } catch (ex) {
                 console.error(ex);
             }
