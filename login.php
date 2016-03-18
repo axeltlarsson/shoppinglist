@@ -11,7 +11,7 @@
 
 <head>
 		<!-- Logo -->
-		<link rel="SHORTCUT ICON" href="/assets/images/animated_favicon1.gif" />
+		<LINK REL="SHORTCUT ICON" HREF="/assets/images/icons/web_hi_res_512.png" />
 
 		<!-- UTF8 -->
 		<meta charset="UTF-8" />

@@ -18,7 +18,7 @@
 <html>
 	<head>
 		<!-- Logo -->
-		<LINK REL="SHORTCUT ICON" HREF="/assets/images/animated_favicon1.gif" />
+		<LINK REL="SHORTCUT ICON" HREF="/assets/images/icons/web_hi_res_512.png" />
 		
 		<!-- UTF8 -->
 		<meta charset="UTF-8" />
@@ -27,6 +27,9 @@
 
 		<!-- Anpassa efter mobiler -->
 		<meta name=viewport content="width=device-width, initial-scale=0.55, user-scalable=no" />
+        <link rel="manifest" href="manifest.json">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="theme-color" content="#424242">
 		
 		<!-- Importera Roboto -->
 		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100">

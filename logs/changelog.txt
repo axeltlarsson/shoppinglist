@@ -1,5 +1,9 @@
 Beskriver projektet "inköpslistan".
 
+
+* 2016-03-18 18:35
+    - Lagt till snyggare favicon, mainfest.json (för proffsigare add to homescreen för Android med ikoner). Theme-color meta-tagg för mobile-index
+
 * 2016-03-06 18:31
     - Lite buggutskrifter som hjälpte mig att få listan att funka på nginx, låter
         de vara kvar.
